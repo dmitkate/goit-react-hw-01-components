@@ -1,33 +1,23 @@
+import { Profile } from './templ';
+import { Statistics } from './statistics';
+import {FriendList} from './friends';
+import { TransactionHistory } from './trans';
+
+import user from '../user.json';
+import data from '../data.json';
+import transactions from '../transactions.json';
+import friends from '../friends.json';
+
 
 export const App = () => {
-  return (  
-  <div class="profile">
-  <div class="description">
-    <img
-      src={user.avatar}
-      alt="User avatar"
-      class="avatar"
-    />
-    <p class="name">Petra Marica</p>
-    <p class="tag">@pmarica</p>
-    <p class="location">Salvador, Brasil</p>
+  return <div>
+    <Profile  username={user.username}
+              tag={user.tag}
+              location={user.location}
+              avatar={user.avatar}
+              stats={user.stats}  />
+    <Statistics stats={data} />
+    <FriendList friends={friends} />;
+    <TransactionHistory items={transactions} />
   </div>
-
-  <ul className="stats">
-    <li>
-      <span className="label">Followers</span>
-      <span className="quantity">1000</span>
-    </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">2000</span>
-    </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">3000</span>
-    </li>
-  </ul>
-</div>
-
-  );
 };

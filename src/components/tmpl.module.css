@@ -1,0 +1,51 @@
+.tmpl{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+    background-color: #fff;
+    border-radius: 4px;
+    width: 360px;
+
+}
+.avatar{
+    margin-top: 30px;
+    width: 240px;
+    border-radius: 50%;
+    background-color: rgb(159, 151, 151);
+}
+.name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+.location{
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+.stats{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(99, 95, 92);
+}
+.stats li{
+   
+    border: 1px solid #fff;
+    
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+.qantity{
+    margin-top: 5px;
+    font-weight: bold;
+}
